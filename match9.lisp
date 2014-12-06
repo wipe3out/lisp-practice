@@ -63,7 +63,7 @@
                             (match x (cdr y) binds (append wbinds (list (car y))))
                             (values b2 yes)))))))
 
-;; Most part of this function is stolen by "On Lisp"
+;; Most part of this function is stolen from "On Lisp"
 (defun match (x y &optional binds wbinds)
   (cond
    ((eql x y) (values binds t))
